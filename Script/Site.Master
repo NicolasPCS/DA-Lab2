@@ -3,27 +3,21 @@
 <!DOCTYPE html>
 <html lang="es">
     <script languaje="C#" runat="server">
-        void Pulsado(Object sender, EventArgs args)
+        void BotonPulsado(Object fuente, EventArgs argumento)
         {
-            etiqueta.InnerText = lista.Value;
+            enlace.HRef = "HolaMundo.html";
         }
     </script>
 <head runat="server">
-<title><%: Page.Title %> - Script ASP.NET</title>
+    <title><%: Page.Title %> - Script ASP.NET</title>
 </head>
 <body>
-    <form id="WebForm" method="post" runat="server">
-        <h1>Seleccionar película</h1>
-        <select id="lista" runat="server">
-            <option selected>La Vida es bella</option>
-            <option>Zootopia</option>
-            <option>Kungfu Panda</option>
-            <option>2001</option>
-        </select>
-        <input type="button" id="boton" runat="server" value="Seleccionar"
-        onserverclick="Pulsado" />
-        <br/>
-        <div id="etiqueta" runat="server"></div>
+    <form id="formulario" method="post" runat="server">
+        <a href="ejemplo1.html" id="enlace" runat="server">
+            Pulsar enlace</a><br /><br />
+        <button runat="server" id="Button1" OnServerClick="BotonPulsado">
+            <b>Pulsa</b>
+        </button>
     </form>
 </body>
 </html>
