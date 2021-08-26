@@ -1,23 +1,25 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Script.SiteMaster" %>
 
 <!DOCTYPE html>
+<script languaje ="C#" runat="server">
+    void CambiarColor(Object sender, EventArgs argumentos)
+    {
+        cuerpo.Style["background-color"] = Lista.Value;
+    }
+</script>
 <html lang="es">
-    <script languaje="C#" runat="server">
-        void BotonPulsado(Object fuente, EventArgs argumento)
-        {
-            enlace.HRef = "HolaMundo.html";
-        }
-    </script>
-<head runat="server">
-    <title><%: Page.Title %> - Script ASP.NET</title>
-</head>
-<body>
-    <form id="formulario" method="post" runat="server">
-        <a href="ejemplo1.html" id="enlace" runat="server">
-            Pulsar enlace</a><br /><br />
-        <button runat="server" id="Button1" OnServerClick="BotonPulsado">
-            <b>Pulsa</b>
-        </button>
+<body id ="cuerpo" runat="server">
+    <form id="WebForm" method="post" runat="server">
+        <select id="Lista" name="lista" runat="server">
+            <option value="red" selected>rojo</option>
+            <option value="gray">gris</option>
+            <option value="blue">azul</option>
+            <option value="pink">rosa</option>
+            <option value="green">verde</option>
+            <option value="yellow">amarillo</option>
+        </select>
+        <input type="button" runat="server" id="boton" value="Cambia"
+        onserverclick="CambiarColor"/>
     </form>
 </body>
 </html>

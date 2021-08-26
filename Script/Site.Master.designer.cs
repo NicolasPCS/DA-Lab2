@@ -15,30 +15,39 @@ namespace Script
     {
 
         /// <summary>
-        /// Control formulario.
+        /// Control cuerpo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formulario;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cuerpo;
 
         /// <summary>
-        /// Control enlace.
+        /// Control WebForm.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor enlace;
+        protected global::System.Web.UI.HtmlControls.HtmlForm WebForm;
 
         /// <summary>
-        /// Control Button1.
+        /// Control Lista.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect Lista;
+
+        /// <summary>
+        /// Control boton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton boton;
     }
 }
