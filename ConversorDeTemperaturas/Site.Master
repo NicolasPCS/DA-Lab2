@@ -17,7 +17,12 @@
             <div style="font-weight:bold" id="Resultado" runat="server"></div>&nbsp;
             <br/>
             <input type="submit" id="Convertir" runat="server" 
-                value="Aceptar" OnServerClick="Convertir_ServerClick"></input>  
+                value="Aceptar" OnServerClick="Convertir_ServerClick"/>
+            <br><br/>
+            <input type="submit" id="MostrarGrafico" runat="server" 
+                value="MostrarFigura" OnServerClick ="MostrarGrafico_ServerClick"/>
+            <br><br/>
+            <img id="Grafico" runat="server" />
         </div>
     </form>
 </body>
