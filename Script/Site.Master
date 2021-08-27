@@ -2,24 +2,19 @@
 
 <!DOCTYPE html>
 <script languaje ="C#" runat="server">
-    void CambiarColor(Object sender, EventArgs argumentos)
+    void Pulsado(Object sender, EventArgs argumentos)
     {
-        cuerpo.Style["background-color"] = Lista.Value;
+        DateTime ahora;
+        ahora = DateTime.Now;
+        etiqueta.Text = "El momento es: " + ahora.ToString();
     }
 </script>
 <html lang="es">
-<body id ="cuerpo" runat="server">
+<body>
     <form id="WebForm" method="post" runat="server">
-        <select id="Lista" name="lista" runat="server">
-            <option value="red" selected>rojo</option>
-            <option value="gray">gris</option>
-            <option value="blue">azul</option>
-            <option value="pink">rosa</option>
-            <option value="green">verde</option>
-            <option value="yellow">amarillo</option>
-        </select>
-        <input type="button" runat="server" id="boton" value="Cambia"
-        onserverclick="CambiarColor"/>
+        <asp:Button id="boton" onClick="Pulsado" 
+            runat="server" Text="Ver fecha" /> <br />
+        <asp:Label ID="etiqueta" runat="server" />
     </form>
 </body>
-</html>
+</html>
