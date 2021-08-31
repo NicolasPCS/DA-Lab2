@@ -11,7 +11,7 @@ namespace AElectrodomesticos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(this.IsPostBack == false)
+            if (this.IsPostBack == false)
             {
                 Electrodomesticos.Items.Add(new ListItem("Cocina", "1"));
                 Electrodomesticos.Items.Add(new ListItem("Licuadora", "2"));
@@ -26,6 +26,7 @@ namespace AElectrodomesticos
                 Televisor.Visible = false;
                 Aspiradora.Visible = false;
             }
+            grafico.Visible = false;
         }
 
         protected void MostrarServerClick(Object sender, EventArgs e)
@@ -40,6 +41,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = false;
                 Televisor.Visible = false;
                 Aspiradora.Visible = false;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Cocina";
+                grafico.Visible = true;
             }
             if (seleccion.Value == "2")
             {
@@ -50,6 +56,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = false;
                 Televisor.Visible = false;
                 Aspiradora.Visible = false;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Licuadora";
+                grafico.Visible = true;
             }
             if (seleccion.Value == "3")
             {
@@ -60,6 +71,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = false;
                 Televisor.Visible = false;
                 Aspiradora.Visible = false;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Microondas";
+                grafico.Visible = true;
             }
             if (seleccion.Value == "4")
             {
@@ -70,6 +86,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = true;
                 Televisor.Visible = false;
                 Aspiradora.Visible = false;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Refrigerador";
+                grafico.Visible = true;
             }
             if (seleccion.Value == "5")
             {
@@ -80,6 +101,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = false;
                 Televisor.Visible = true;
                 Aspiradora.Visible = false;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Televisor";
+                grafico.Visible = true;
             }
             if (seleccion.Value == "6")
             {
@@ -90,6 +116,11 @@ namespace AElectrodomesticos
                 Refrigerador.Visible = false;
                 Televisor.Visible = false;
                 Aspiradora.Visible = true;
+
+                // Metodo para mostrar imagen
+                grafico.Src = "figura" + Electrodomesticos.SelectedIndex.ToString() + ".jpg";
+                grafico.Alt = "Aspiradora";
+                grafico.Visible = true;
             }
         }
     }

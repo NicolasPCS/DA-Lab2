@@ -74,6 +74,8 @@
                     <li>Precio: 400 soles </li>
                 </ol>
             </div>
+            <br />
+            <img id="grafico" runat="server" />
         </div>
     </form>
 </body>
