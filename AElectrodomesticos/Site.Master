@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" 
+    CodeBehind="Site.master.cs" Inherits="AElectrodomesticos.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+</head>
+<body>
+    <form id="form1" runat="server" method="post">
+        <div>
+            <h1>Sistema de electrodomésticos</h1>
+            <span>A continuación, seleccione un electrodoméstico:&nbsp;</span>
+            <br /> <br />
+            <select id="Electrodomesticos" runat="server" />
+            <input type="submit" id="MostrarDatos" runat="server" value="Seleccionar"
+                OnServerClick="MostrarServerClick"/>
+            <br /> <br />
+            <div style="font-weight:bold" id="Resultado" runat="server"></div>&nbsp;
+            <div id ="Cocina" runat="server">
+                <ol>
+                    <li>Código: 1</li>
+                    <li>Nombre: Cocina</li>
+                    <li>Descripción: Artefacto de cocina</li>
+                    <li>Marca: LG</li>
+                    <li>Precio: 900 soles</li>
+                </ol>
+            </div>
+            <div id ="Licuadora" runat="server">
+                <ol>
+                    <li>Código: 2</li>
+                    <li>Nombre: Licuadora</li>
+                    <li>Descripción: Artefacto de cocina</li>
+                    <li>Marca: Imaco</li>
+                    <li>Precio: 150 soles </li>
+                </ol>
+            </div>
+            <div id ="Microondas" runat="server">
+                <ol>
+                    <li>Código: 3</li>
+                    <li>Nombre: Microondas</li>
+                    <li>Descripción: Artefacto de cocina</li>
+                    <li>Marca: Bosch</li>
+                    <li>Precio: 300 soles </li>
+                </ol>
+            </div>
+            <div id ="Refrigerador" runat="server">
+                <ol>
+                    <li>Código: 4</li>
+                    <li>Nombre: Refrigerador</li>
+                    <li>Descripción: Artefacto de cocina</li>
+                    <li>Marca: LG</li>
+                    <li>Precio: 1500 soles </li>
+                </ol>
+            </div>
+            <div id ="Televisor" runat="server">
+                <ol>
+                    <li>Código: 5</li>
+                    <li>Nombre: Televisor</li>
+                    <li>Descripción: Artefacto de sala</li>
+                    <li>Marca: Samsung</li>
+                    <li>Precio: 2000 soles </li>
+                </ol>
+            </div>
+            <div id ="Aspiradora" runat="server">
+                <ol>
+                    <li>Código: 6</li>
+                    <li>Nombre: Aspiradora</li>
+                    <li>Descripción: Artefacto de casa</li>
+                    <li>Marca: Imaco</li>
+                    <li>Precio: 400 soles </li>
+                </ol>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
